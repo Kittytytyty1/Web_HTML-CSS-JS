@@ -46,5 +46,96 @@
 			</tr>
 		</table>
 	</div>
+	<form method="POST" action="http://121.4.27.37/echo">
+	<fieldset>
+	<legend>个人信息</legend>
+	<div><label>个性签名：</label></div>
+	<div><textarea rows="4" cols="48" placeholder="请输入你的个性签名：" required></textarea></div>
+	<div><label>个人说明：</label></div>
+	<div><textarea rows="4" cols="48" placeholder="请输入你的个人说明：" required></textarea></div>
+	<div>
+		<span><label style="width:64px; display:inline-block;">昵   称：</label></span>
+		<span><input type="text" required /></span>
+		<span><label>姓名：</label></span>
+		<span><input type="text" required /></span>
+	</div>
+	<div>
+		<span><label>英文名：</label></span>
+		<span><input type="text"/></span>
+		<span><label>语言：</label></span>
+		<span>
+			<select name="language" id="language_select" style=" width: 147px;">
+				<option value="Simplified Chinese">简体中文</option>
+				<option value="Traditional Chinese">繁體中文</option>
+				<option value="English">English</option>
+				<option value="German">Deutsch</option>
+				<option value="Russian">Русский</option>
+			</select>
+		</span>
+	</div>
+	<div>
+		<span><label style="width:64px; display:inline-block;">性   别：</label></span>
+		<span>
+			<select name="sex" id="sex_select" style=" width: 147px;">
+				<option value="man">男</option>
+				<option value="woman">女</option>
+				<option value="Walmart">沃尔玛塑料袋</option>
+			</select>
+		</span>
+		<span><label>年龄：</label></span>
+		<span><input type="number" max="120" min="1" required ></span>
+	</div>
+	<div>
+		<span><label style="width:64px; display:inline-block;">生   日：</label></span>
+		<span><input type="date" value="2005-07-26" style="width: 142px;"></span>
+		<span><label>生肖：</label></span>
+		<span>
+			<select name="Chinese Zodiac Signs" id="Chinese_Zodiac_select" style=" width: 147px;">
+				<option value="mouse">鼠</option>
+				<option value="bull">牛</option>
+				<option value="tiger">虎</option>
+				<option value="rubbit">兔</option>
+				<option value="dragon">龙</option>
+				<option value="snake">蛇</option>
+				<option value="horse">马</option>
+				<option value="sheep">羊</option>
+				<option value="monkey">猴</option>
+				<option value="chicken">鸡</option>
+				<option value="dog">狗</option>
+				<option value="pig">猪</option>
+			</select>
+		</span>
+	</div>
+	<div>
+		<span><label style="width:64px; display:inline-block;">星   座：</label></span>
+		<span>
+			<select name="Star Signs" id="Stars_select" style=" width: 147px;">
+				<option value="Aries">白羊座</option>
+				<option value="Taurus">金牛座</option>
+				<option value="Gemini">双子座</option>
+				<option value="Cancer">巨蟹座</option>
+				<option value="Leo">狮子座</option>
+				<option value="Virgo">处女座</option>
+				<option value="Libra">天秤座</option>
+				<option value="Scorpio">天蝎座</option>
+				<option value="Sagittarius">射手座</option>
+				<option value="Capricorn">摩羯座</option>
+				<option value="Aquarius">水瓶座</option>
+				<option value="Pisces">双鱼座</option>
+			</select>
+		</span>
+		<span><label>血型：</label></span>
+		<span>
+			<select name="blood" style="width: 147px;">
+				<option value="A">A型</option>
+				<option value="B">B型</option>
+				<option value="AB">AB型</option>
+				<option value="O">O型</option>
+			</select>
+		</span>
+	</div>
+	<div><input type="submit" value="保存个人设置"></div>
+</fieldset>
+</form>
 </body>
 </html>

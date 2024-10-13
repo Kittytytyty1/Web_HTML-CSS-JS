@@ -5,11 +5,7 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>input use</title>
-	<style type="text/css">
-		label{
-			width: 65px;
-		}
-	</style>
+	
 </head>
 <body>
 	<div><input type="button" name="inputbutton" value="快点我" /></div>
@@ -22,15 +18,16 @@
 	<div><label>choose a file</label> <input type="file"/></div>
 	<div><input type="submit" name="http://121.4.27.37/echo" method="get"></div>
 
+	<form method="POST" action="http://121.4.27.37/echo" enctype="multipart/form-data">
 	<div><label>个性签名：</label></div>
-	<div><textarea rows="4" cols="48" placeholder="请输入你的个性签名："></textarea></div>
+	<div><textarea rows="4" cols="48" placeholder="请输入你的个性签名：" required name="Personal words"></textarea></div>
 	<div><label>个人说明：</label></div>
-	<div><textarea rows="4" cols="48" placeholder="请输入你的个人说明："></textarea></div>
+	<div><textarea rows="4" cols="48" placeholder="请输入你的个人说明：" required name="Personal description"></textarea></div>
 	<div>
 		<span><label style="width:64px; display:inline-block;">昵   称：</label></span>
-		<span><input type="text"/></span>
+		<span><input type="text" required /></span>
 		<span><label>姓名：</label></span>
-		<span><input type="text"/></span>
+		<span><input type="text" required value="name"></span>
 	</div>
 	<div>
 		<span><label>英文名：</label></span>
@@ -52,10 +49,11 @@
 			<select name="sex" id="sex_select" style=" width: 147px;">
 				<option value="man">男</option>
 				<option value="woman">女</option>
+				<option value="Walmart">沃尔玛塑料袋</option>
 			</select>
 		</span>
 		<span><label>年龄：</label></span>
-		<span><input type="number" max="3" required ></span>
+		<span><input type="number" max="120" min="1" required></span>
 	</div>
 	<div>
 		<span><label style="width:64px; display:inline-block;">生   日：</label></span>
@@ -63,7 +61,7 @@
 		<span><label>生肖：</label></span>
 		<span>
 			<select name="Chinese Zodiac Signs" id="Chinese_Zodiac_select" style=" width: 147px;">
-				<option value="mousde">鼠</option>
+				<option value="mouse">鼠</option>
 				<option value="bull">牛</option>
 				<option value="tiger">虎</option>
 				<option value="rubbit">兔</option>
@@ -106,10 +104,8 @@
 			</select>
 		</span>
 	</div>
-
-	<!---
-	<div><input type="text" placeholder="请输入你的个性签名："></div>
-	--->
+	<div><input type="submit" value="保存个人设置" formenctype="multipart/form-data"></div>
+</form>
 
 </body>
 </html>
