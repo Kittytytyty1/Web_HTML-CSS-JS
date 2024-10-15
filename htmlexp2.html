@@ -50,18 +50,18 @@
 	<fieldset>
 	<legend>个人信息</legend>
 	<div><label>个性签名：</label></div>
-	<div><textarea rows="4" cols="48" placeholder="请输入你的个性签名：" required></textarea></div>
+	<div><textarea name="personalinfo" rows="4" cols="48" placeholder="请输入你的个性签名：" required></textarea></div>
 	<div><label>个人说明：</label></div>
-	<div><textarea rows="4" cols="48" placeholder="请输入你的个人说明：" required></textarea></div>
+	<div><textarea name="personaldescription" rows="4" cols="48" placeholder="请输入你的个人说明：" required></textarea></div>
 	<div>
 		<span><label style="width:64px; display:inline-block;">昵   称：</label></span>
-		<span><input type="text" required /></span>
+		<span><input name="nickname" type="text" required /></span>
 		<span><label>姓名：</label></span>
-		<span><input type="text" required /></span>
+		<span><input name="name" type="text" required /></span>
 	</div>
 	<div>
 		<span><label>英文名：</label></span>
-		<span><input type="text"/></span>
+		<span><input name="Englishname" type="text"/></span>
 		<span><label>语言：</label></span>
 		<span>
 			<select name="language" id="language_select" style=" width: 147px;">
@@ -83,11 +83,11 @@
 			</select>
 		</span>
 		<span><label>年龄：</label></span>
-		<span><input type="number" max="120" min="1" required ></span>
+		<span><input name="age" type="number" max="120" min="1" required ></span>
 	</div>
 	<div>
 		<span><label style="width:64px; display:inline-block;">生   日：</label></span>
-		<span><input type="date" value="2005-07-26" style="width: 142px;"></span>
+		<span><input name="birthday" type="date" value="2005-07-26" style="width: 142px;"></span>
 		<span><label>生肖：</label></span>
 		<span>
 			<select name="Chinese Zodiac Signs" id="Chinese_Zodiac_select" style=" width: 147px;">
